@@ -55,24 +55,10 @@ while True:
         comp_dice = random_dice()
         comp_round_result = + dice(comp_dice)
     result_user = calculate_points(result_user, user_round_result)
-    """
-    if user_round_result == 7:
-        result_user = result_user // 7
-    elif user_round_result == 11:
-        result_user = result_user * 7
-    else:
-        result_user += user_round_result
-    """
+
     print(f"Result user after round {result_user}")
     result_comp = calculate_points(result_comp, comp_round_result)
-    """
-    if comp_round_result == 7:
-        result_comp = result_comp // 7
-    elif comp_round_result == 11:
-        result_comp = result_comp * 11
-    else:
-        result_comp += comp_round_result
-    """
+
     print(f"Result comp after round {result_comp}")
 
     if result_user >= 2021 and result_user > result_comp:
